@@ -6,8 +6,13 @@ node_modules/
 # Expo
 .expo/
 dist/
+dist-ios/
+dist-android-3d/
+dist-web-3d/
 web-build/
 expo-env.d.ts
+*.apk
+assets/app-icon-chase-v2.png
 
 # Native
 .kotlin/

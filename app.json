@@ -1,25 +1,43 @@
 {
   "expo": {
     "name": "ChickenRun",
-    "slug": "ChickenRun",
-    "version": "1.0.0",
+    "slug": "chicken-run",
+    "version": "1.1.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/app-icon-chase-v3.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Chicken Run ใช้เซ็นเซอร์เพื่อตรวจจับการกระโดดและการเอียงโทรศัพท์สำหรับเล่นเกม"
+        }
+      ]
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "CADisableMinimumFrameDurationOnPhone": true
+      }
     },
     "android": {
+      "package": "com.chickenrun.game",
+      "versionCode": 5,
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
+        "backgroundColor": "#F1A04A",
+        "foregroundImage": "./assets/app-icon-chase-v3.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "599944df-d26b-4d81-8fa9-c90bcf09be2a"
+      }
+    },
+    "owner": "stamp001"
   }
 }
